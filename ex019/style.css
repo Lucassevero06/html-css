@@ -1,0 +1,33 @@
+/*
+ tudo que em HTML é "id", em CSS é "#" (id só pode 1 elemento;
+ tudo que em HTML é "class", em CSS é "." (pode vários elementos).
+*/
+
+body{
+    background-color: rgba(0, 0, 0, 0.768);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(76, 0, 255);
+}
+h1#principal {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+}
+h2{
+    color: rgb(0, 255, 76);
+}
+.basico{
+    color:greenyellow ;
+}
+.intermediario {
+    color: blueviolet;
+}
+.avancado {
+    color: brown;
+}
+p{
+    text-align: justify;
+    color: white;
+}
