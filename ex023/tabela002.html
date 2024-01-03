@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: rgb(43, 42, 42);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky; /* Deixa o topo da tabela fixo mesmo pós rolagem de tela, finalizando efeito assim que chega ao fim da tabela */
+            top: -1px;
+            background-color: rgb(43, 42, 42) ;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+
+            /*
+            odd = impares
+            even = pares
+            */
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--Anatomias para tabelas grandes
+    TABLE
+    CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">537598234</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">987970987</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">984372594</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">537598234</td>
+            </tr>
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">987970987</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">984372594</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>5739482759823475983475</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni pariatur ut optio expedita consequuntur odio vitae, quisquam nemo corporis amet incidunt quod placeat commodi nisi possimus sint ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque tempora incidunt aperiam quos? Quos animi doloribus sapiente possimus, officia placeat numquam voluptatibus adipisci. Quos cupiditate reiciendis placeat corrupti aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias cum quod doloremque ducimus provident repudiandae assumenda! Voluptatum nesciunt amet, fugiat delectus voluptas nobis, modi nemo aliquam voluptatibus esse saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat reprehenderit aliquam voluptatibus, aut eum. Quod magni perferendis est at, voluptas tempora, placeat impedit autem unde culpa velit repudiandae? Fugiat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni pariatur ut optio expedita consequuntur odio vitae, quisquam nemo corporis amet incidunt quod placeat commodi nisi possimus sint ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque tempora incidunt aperiam quos? Quos animi doloribus sapiente possimus, officia placeat numquam voluptatibus adipisci. Quos cupiditate reiciendis placeat corrupti aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias cum quod doloremque ducimus provident repudiandae assumenda! Voluptatum nesciunt amet, fugiat delectus voluptas nobis, modi nemo aliquam voluptatibus esse saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat reprehenderit aliquam voluptatibus, aut eum. Quod magni perferendis est at, voluptas tempora, placeat impedit autem unde culpa velit repudiandae? Fugiat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni pariatur ut optio expedita consequuntur odio vitae, quisquam nemo corporis amet incidunt quod placeat commodi nisi possimus sint ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque tempora incidunt aperiam quos? Quos animi doloribus sapiente possimus, officia placeat numquam voluptatibus adipisci. Quos cupiditate reiciendis placeat corrupti aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias cum quod doloremque ducimus provident repudiandae assumenda! Voluptatum nesciunt amet, fugiat delectus voluptas nobis, modi nemo aliquam voluptatibus esse saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat reprehenderit aliquam voluptatibus, aut eum. Quod magni perferendis est at, voluptas tempora, placeat impedit autem unde culpa velit repudiandae? Fugiat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni pariatur ut optio expedita consequuntur odio vitae, quisquam nemo corporis amet incidunt quod placeat commodi nisi possimus sint ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque tempora incidunt aperiam quos? Quos animi doloribus sapiente possimus, officia placeat numquam voluptatibus adipisci. Quos cupiditate reiciendis placeat corrupti aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias cum quod doloremque ducimus provident repudiandae assumenda! Voluptatum nesciunt amet, fugiat delectus voluptas nobis, modi nemo aliquam voluptatibus esse saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat reprehenderit aliquam voluptatibus, aut eum. Quod magni perferendis est at, voluptas tempora, placeat impedit autem unde culpa velit repudiandae? Fugiat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni pariatur ut optio expedita consequuntur odio vitae, quisquam nemo corporis amet incidunt quod placeat commodi nisi possimus sint ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque tempora incidunt aperiam quos? Quos animi doloribus sapiente possimus, officia placeat numquam voluptatibus adipisci. Quos cupiditate reiciendis placeat corrupti aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias cum quod doloremque ducimus provident repudiandae assumenda! Voluptatum nesciunt amet, fugiat delectus voluptas nobis, modi nemo aliquam voluptatibus esse saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat reprehenderit aliquam voluptatibus, aut eum. Quod magni perferendis est at, voluptas tempora, placeat impedit autem unde culpa velit repudiandae? Fugiat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magni pariatur ut optio expedita consequuntur odio vitae, quisquam nemo corporis amet incidunt quod placeat commodi nisi possimus sint ipsa repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque tempora incidunt aperiam quos? Quos animi doloribus sapiente possimus, officia placeat numquam voluptatibus adipisci. Quos cupiditate reiciendis placeat corrupti aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias cum quod doloremque ducimus provident repudiandae assumenda! Voluptatum nesciunt amet, fugiat delectus voluptas nobis, modi nemo aliquam voluptatibus esse saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat reprehenderit aliquam voluptatibus, aut eum. Quod magni perferendis est at, voluptas tempora, placeat impedit autem unde culpa velit repudiandae? Fugiat?</p>
+</body>
+</html>
