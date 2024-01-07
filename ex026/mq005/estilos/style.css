@@ -38,7 +38,26 @@ nav {
     color: white;
  }
 
+ a:hover {
+    background-color: gray;
+    transition: 0.5s;
+ }
+
  main {
+    background-color: white;
     width: 320px;
     margin: auto;
+    border: 1px solid black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px;
+ }
+
+ main h1 {
+    text-align: center;
+    padding: 10px;
+ }
+
+ main p {
+    text-align: justify;
+    padding: 8px;
  }
