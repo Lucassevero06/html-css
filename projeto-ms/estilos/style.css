@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
 :root {
-    --var();
+    --cor1: #038C4C;
+    --cor2: #22F291;
+    --cor3: #022601;
+    --cor4: #F2F2F2;
+    --cor5: #0D0D0D;
+
+    --font1:  
+}
+
+* {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px;
+    padding: 0px;
 }
