@@ -73,9 +73,9 @@ div.topo-site {
     transform: translate(-50%, -50%);
 
     padding: 20px;
-    background-color: var(--cor5);
+    background: transparent;
+    backdrop-filter: blur(10px);
     color: var(--cor4);
-    opacity: 0.8;
     width: 400px;
     height: 370px;
     border-radius: 30px;
