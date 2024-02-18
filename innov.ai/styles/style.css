@@ -24,6 +24,13 @@ body {
     color: white;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .btn {
     text-decoration: none;
     color: var(--cor2);
@@ -40,6 +47,14 @@ body {
     box-shadow: 1px 1px 15px var(--cor2);
     transform: scale(1.2);
 }
+
+.txt h1 {
+    color: white;
+    text-shadow: 1px 1px 2px var(--cor2);
+    font-size: 2em;
+    font-family: var(--anta);
+    margin-bottom: 20px;
+}
 /* FIM ESTILOS GERAIS */
 
 /* HEADER */
@@ -48,5 +63,16 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 /* FIM HEADER */
+
+/* MAIN */
+main {
+    width: 90vw;
+}
+/* FIM MAIN */
+
+/* SECTION */
+section {
+   
+}
+/* FIM SECTION */
