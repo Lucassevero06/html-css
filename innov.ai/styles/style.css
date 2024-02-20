@@ -3,7 +3,6 @@
 :root {
 
     --montserrat: "Montserrat", sans-serif;
-    --anta: "Anta", sans-serif;
 
     --cor1: #022859;
     --cor2: #2291F2;
@@ -31,7 +30,17 @@ body {
     flex-direction: column;
 }
 
+.sec {
+    padding-top: 105px;
+    padding-bottom: 105px;
+ }
+ 
+ .cta {
+     padding-bottom: 210px;
+ }
+
 .btn {
+    font-family: var(--montserrat);
     text-decoration: none;
     color: var(--cor2);
     font-weight: bold;
@@ -50,9 +59,8 @@ body {
 
 .txt h1 {
     color: white;
-    text-shadow: 1px 1px 2px var(--cor2);
     font-size: 2em;
-    font-family: var(--anta);
+    font-family: var(--montserrat);
     margin-bottom: 20px;
 }
 /* FIM ESTILOS GERAIS */
@@ -60,8 +68,9 @@ body {
 /* HEADER */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 100px;
 }
 /* FIM HEADER */
 
@@ -72,7 +81,67 @@ main {
 /* FIM MAIN */
 
 /* SECTION */
-section {
-   
-}
+
 /* FIM SECTION */
+
+/* FOOTER */
+footer {
+    padding: 15px;
+    padding-bottom: 20px;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer > img {
+    width: 100px;
+    height: 60px;
+}
+
+footer > p > span {
+   text-decoration: none;
+   color: var(--cor2);
+   font-size: 1.1em;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+}
+
+footer > ul > li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+footer > ul {
+    margin-bottom: 20px;
+}
+
+#rs-email {
+    background: #f03535;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#rs-telefone {
+    background: #18D911;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#rs-instagram {
+    background: linear-gradient(to right, #F2AF5C, #F26430, #F24968, #D9328E, #983BBF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#rs-facebook {
+    background: linear-gradient(to left, #C2DCF2, #8DC3F2, #52A8F2, #138AF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+/* FIM FOOTER */
